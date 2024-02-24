@@ -2,23 +2,23 @@ macro_xawx: macro_xawx{
 compatible = "zmk,behavior-macro";
 label = "macro_xawx";
 #binding-cells = <0>;
-bindings = <&kp LEFT_ALT>, <&kp LEFT_META>;
+bindings = <&mt LEFT_ALT LEFT_ALT>, <&mt LEFT_META LEFT_META>;
 };
 macro_caxx: macro_caxx{
 compatible = "zmk,behavior-macro";
 label = "macro_caxx";
 #binding-cells = <0>;
-bindings = <&kp LCTRL>, <&kp LEFT_ALT>;
+bindings = <&mt LEFT_CONTROL LCTRL>, <&mt LEFT_ALT LEFT_ALT>;
 };
 macro_cxwx: macro_cxwx{
 compatible = "zmk,behavior-macro";
 label = "macro_cxwx";
 #binding-cells = <0>;
-bindings = <&kp LCTRL>, <&kp LMETA>;
+bindings = <&mt LCTRL LCTRL>, <&mt LEFT_META LEFT_META>;
 };
 macro_cxws: macro_cxws{
 compatible = "zmk,behavior-macro";
 label = "macro_cxws";
 #binding-cells = <0>;
-bindings = <&kp LCTRL>, <&kp LCMD>, <&kp LSHIFT>;
+bindings = <&mt LCTRL LCTRL>, <&mt LMETA LMETA>, <&mt LSHFT LSHFT>;
 };
