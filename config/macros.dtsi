@@ -1,40 +1,43 @@
-macro_xawx: macro_xawx{
-compatible = "zmk,behavior-macro";
-label = "macro_xawx";
-#binding-cells = <0>;
-bindings 
-  = <&macro_press &kp LEFT_ALT &kp LMETA>
-  , <&macro_pause_for_release>
-  , <&macro_release &kp LEFT_ALT &kp LMETA>
+macro_xawx: macro_xawx {
+  compatible = "zmk,behavior-macro";
+  label = "macro_xawx";
+  #binding-cells = <0>;
+  bindings 
+    = <&macro_press &kp LEFT_ALT &kp LEFT_META>
+    , <&macro_pause_for_release>
+    , <&macro_release &kp LEFT_ALT &kp LEFT_META>
   ;
 };
-macro_caxx: macro_caxx{
-compatible = "zmk,behavior-macro";
-label = "macro_caxx";
-#binding-cells = <0>;
-bindings
-  = <&macro_press &kp LCTRL &kp LEFT_ALT>
-  , <&macro_pause_for_release>
-  , <&macro_release &kp LCTRL &kp LEFT_ALT>
-  ;
+
+macro_caxx: macro_caxx {
+  compatible = "zmk,behavior-macro";
+  label = "macro_caxx";
+  #binding-cells = <0>;
+  bindings
+    = <&macro_press &kp LCTRL &kp LEFT_ALT>
+    , <&macro_pause_for_release>
+    , <&macro_release &kp LCTRL &kp LEFT_ALT>
+    ;
 };
-macro_cxwx: macro_cxwx{
-compatible = "zmk,behavior-macro";
-label = "macro_cxwx";
-#binding-cells = <0>;
-bindings
-  = <&macro_press &kp LCTRL &kp LMETA>
-  , <&macro_pause_for_release>
-  , <&macro_release &kp LCTRL &kp LMETA>
-  ;
+
+macro_cxwx: macro_cxwx {
+  compatible = "zmk,behavior-macro";
+  label = "macro_cxwx";
+  #binding-cells = <0>;
+  bindings
+    = <&macro_press &kp LCTRL &kp LEFT_META>
+    , <&macro_pause_for_release>
+    , <&macro_release &kp LCTRL &kp LEFT_META>
+    ;
 };
-macro_cxws: macro_cxws{
-compatible = "zmk,behavior-macro";
-label = "macro_cxws";
-#binding-cells = <0>;
-bindings
-  = <&macro_press &kp LCTRL &kp LMETA &kp LSHFT>
-  , <&macro_pause_for_release>
-  , <&macro_release &kp LCTRL &kp LMETA  &kp LSHFT>
-  ;
+
+macro_cxws: macro_cxws {
+  compatible = "zmk,behavior-macro";
+  label = "macro_cxws";
+  #binding-cells = <0>;
+  bindings
+    = <&macro_press &kp LCTRL &kp LEFT_META &kp LSHFT>
+    , <&macro_pause_for_release>
+    , <&macro_release &kp LCTRL &kp LEFT_META  &kp LSHFT>
+    ;
 };
